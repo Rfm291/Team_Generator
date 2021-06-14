@@ -1,22 +1,26 @@
 const fs = require ('fs');
 const path = require('path');
-const inquirer = require('inquirer');
+const {prompt: askManager} = require('inquirer');
 const engineer= require('./lib/engineer.js');
 const intern = require('./lib/intern.js');
 const manager = require('./lib/manager.js');
 const questions = require('./src/questions.js');
 
-async function main () {
+const htmlTeamArray = []
+
+async function init () {
+    // generate manager
+    // ask questions
+    const managerAnswers = await askManager(questions.managerQuestions)
     
-    console.log(questions.internQuestions)
-    // htmlCardArray [];
-
-    // generate Manager
-        // ask questions
-        // render new manager based on obj props
+    const managerObj = new manager(...Object.values(managerAnswers))
+    // render new manager based on obj props
+    const cardString = renderEmployee(managerObj)
         // push to htmlCardArray
+    htmlTeamArray.push(cardString)
         // back to mainMenu
-
+    mainMenu()
+}
     // generate Intern
         // ask questions
         // render new intern based on obj props
@@ -66,11 +70,11 @@ async function main () {
             // engineer
             // done
     
-}
+
 
 // start
 
-main();
+init();
 // Question objects contain questions for prompts
 
 

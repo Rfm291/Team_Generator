@@ -3,22 +3,22 @@ module.exports = {
 managerQuestions: [
        {
         type: "input",
-        name: "nameManager",
+        name: "Manager",
         message: "Please enter your Manager's name.",
     },
     {
         type: "input",
-        name: "idIntern",
+        name: "ManagerID",
         message: "Please enter your Manager's ID number",
     },
     {
         type: "input",
-        name: "emailIntern",
+        name: "ManagerEmail",
         message: "Please enter your Manager's email.",
     },
     {
         type:"input",
-        name:"emailManager",
+        name:"ManagerOfficeNumber",
         message: "Please enter your Manager's office number.",
     }
 ],
@@ -26,44 +26,44 @@ managerQuestions: [
 internQuestions: [
     {
         type: "input",
-        name: "nameIntern",
+        name: "InternName",
         message: "Please enter your Intern's name.",
     },
     {
         type: "input",
-        name: "idIntern",
+        name: "InternID",
         message: "Please enter your Intern's ID number",
     },
     {
         type: "input",
-        name: "emailIntern",
+        name: "InternEmail",
         message: "Please enter your Intern's email.",
     },
     {
         type: "input",
-        name: "schoolIntern",
+        name: "InternSchool",
         message: "Please enter your Intern's school name.",
     }
 ],
 engineerQuestions: [
     {
         type: "input",
-        name: "nameEngineer",
+        name: "EngineerName",
         message: "Please enter your Engineer's name.",
     },
     {
         type: "input",
-        name: "idEngineer",
+        name: "EngineerID",
         message: "Please enter your Engineer's ID number",
     },
     {
         type: "input",
-        name: "emailEngineer",
+        name: "EngineerEmail",
         message: "Please enter your Engineer's email.",
     },
     {
         type: "input",
-        name: "githubEngineer",
+        name: "EngineerGithub",
         message: "Please enter your Engineer's Github.",
     }
 ]
