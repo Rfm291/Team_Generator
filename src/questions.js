@@ -1,5 +1,6 @@
+
 module.exports = {
-    
+
 managerQuestions: [
        {
         type: "input",
@@ -66,5 +67,12 @@ engineerQuestions: [
         name: "EngineerGithub",
         message: "Please enter your Engineer's Github.",
     }
-]
+],
+mainMenuQuestions: [
+    {
+        type: "input",
+        name: "mainmenu",
+        message: "What would you like to do?",
+        },    
+    ],
 }
